@@ -30,13 +30,6 @@ public class MathC {
     }
 
     private static int Del(int a, int b){
-        try {
-            if (a % b != 0) throw new Exception();
-            return a/b;
-        }
-        catch(Exception e){
-            System.out.println("Результат не целое число! Калькулятор работает только с целыми числами.");
-            return 0;
-        }
+        return a / b;
     }
 }
